@@ -39,8 +39,7 @@ function AccountOperations() {
   }
 
   function handlePayLoan() {
-    if (!loanAmount) return;
-    dispatch(payLoan(Number(loanAmount)));
+    dispatch(payLoan());
     setLoanAmount("");
   }
 
@@ -111,7 +110,7 @@ function AccountOperations() {
 
         <div>
           <span>
-            Pay back ${(loan_value * 1.03).toFixed(2)}
+            Pay back ${loan_value} {"  "}
           </span>
           <button onClick={handlePayLoan}>Pay loan</button>
         </div>
