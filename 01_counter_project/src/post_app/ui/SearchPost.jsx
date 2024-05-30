@@ -1,11 +1,18 @@
+import { useDispatch } from "react-redux";
 import React from "react";
+import { fetchSinglePost } from "../post-slice";
 import "./Form.css";
+
 const SearchPost = () => {
   //search form state
   const [search, setSearch] = React.useState("");
-  //search form submit handler
+  const dispatch = useDispatch();
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!search) return null;
+
+    dispatch(fetchSinglePost(search));
   };
 
   return (

@@ -1,9 +1,9 @@
 import "./post_app.css";
 
-import PotesList from "./ui/PostsList";
+import PostsList from "./ui/PostsList";
 
 function PostApp() {
-  return <PotesList />;
+  return <PostsList />;
 }
 
 export default PostApp;
