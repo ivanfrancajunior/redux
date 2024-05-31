@@ -1,8 +1,3 @@
-import { useSelector } from "react-redux";
-import AccountOperations from "./features/accounts/AccountOperations";
-import BalanceDisplay from "./features/accounts/BalanceDisplay";
-import CreateCustomer from "./features/costumers/CreateCustomer";
-import Customer from "./features/costumers/Customer";
 import PostApp from "./post_app/post_app";
 function App() {
   // const costumer = useSelector(
